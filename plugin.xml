@@ -9,7 +9,7 @@
     Plugin for iOS to encode wav to m4a
   </description>
 
-  <license>MIT</license>
+  <license>Apache License 2.0</license>
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
