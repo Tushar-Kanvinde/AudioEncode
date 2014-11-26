@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="autarky.plugin.audioEncode"
+        version="1.1.0">
+
+  <name>AudioEncode</name>
+
+  <description>
+    Plugin for iOS to encode wav to m4a
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/AudioEncode.js" name="AudioEncode">
+    <clobbers target="window.plugins.encodeAudio" />
+  </js-module>
+
+  <!-- ios -->
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="AudioEncode">
+        <param name="ios-package" value="AudioEncode"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/AudioEncode.h"/>
+    <source-file src="src/ios/AudioEncode.m"/>
+  </platform>
+
+</plugin>
