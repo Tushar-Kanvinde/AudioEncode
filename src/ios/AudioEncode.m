@@ -45,8 +45,10 @@
         } else {
             NSLog(@"Export Session Status: %d", exportSession.status);
         }
-        
-        [exportSession release];
+
+
+// ARC no longer accepts this        
+//        [exportSession release];
         
         NSFileManager *fileMgr = [NSFileManager defaultManager];
         NSError *error = noErr;
