@@ -17,5 +17,5 @@
 
 @property (nonatomic, retain) NSString* callbackId;
 
-- (void)encodeAudio:(NSArray*)arguments withDict:(NSDictionary*)options;
+- (void)encodeAudio:(CDVInvokedUrlCommand*)command;
 @end
